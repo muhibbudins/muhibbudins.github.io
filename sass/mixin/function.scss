@@ -1,0 +1,27 @@
+/* Functions */
+@mixin centerAbs {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@mixin box-shadow($parameter...) {
+	-webkit-box-shadow: $parameter;
+	-moz-box-shadow: $parameter;
+	-o-box-shadow: $parameter;
+	box-shadow: $parameter;
+}
+
+@mixin transition($parameter...) {
+	-webkit-transition: $parameter;
+	-moz-transition: $parameter;
+	-o-transition: $parameter;
+	transition: $parameter;
+}
+
+@mixin radius($round) {
+	-webkit-border-radius: $round;
+	-moz-border-radius: $round;
+	-o-border-radius: $round;
+	border-radius: $round;
+}
