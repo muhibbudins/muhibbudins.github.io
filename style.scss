@@ -1,0 +1,201 @@
+// Variable
+$white : #FFFFFF;
+$purple : #5462FF;
+$tosca : #15D5C5;
+$tosca_dark : #0EC7B7;
+$dark_blue : #2C50B7;
+$pink : #FF7575;
+$pink_dark : #FF6262;
+$dark_grey : #5B5B5B;
+
+// Text
+.text {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	margin: 10px 0;
+
+	&-center {
+		text-align: center;
+	}
+	&-title {
+		font-family: 'Rozha One', serif;
+		font-size: 96px;
+	}
+	&-sub {
+		font-size: 48px;
+	}
+	&-small {
+		font-size: 10px;
+		font-weight: normal;
+		margin-top: 5px;
+	}
+}
+
+// Sidebar
+.sidebar {
+	width: 100px;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	background-color: $pink;
+	transition: all 0.3s ease-in-out;
+
+	&-trigger {
+		width: 100px;
+		height: 100px;
+		font-size: 48px;
+		color: $white;
+		text-align: center;
+		padding: 10px 0;
+		cursor: pointer;
+	}
+	&-menu {
+
+	}
+	&-overlay {
+
+	}
+}
+
+
+// Right Bullet
+#fp-nav.right {
+	ul li {
+		list-style-type: none;
+		margin-bottom: 20px;
+
+		a {
+			width: 15px;
+			height: 15px;
+			background-color: transparent;
+			border: 1px solid $pink;
+			border-radius: 0;
+			transition: all 0.3s ease-in-out;
+
+			&.active {
+				background-color: $pink;
+			}
+			span {
+				display: none;
+			}
+		}
+	}
+}
+
+// Section
+.section {
+	&-one {
+		.text-title {
+			color: $pink;
+		}
+	}
+	&-two {
+		color: $white;
+	}
+	&-three {
+		color: $white;
+	}
+	&-four {
+		color: $white;
+
+		.thumbnail > .thumbnail_overlay {
+			color: $dark_blue;
+		}
+	}
+	&-five {
+		color: $white;
+	}
+}
+
+// Thumbnail
+.thumbnail {
+	display: block;
+	position: relative;
+	text-decoration: none;
+	color: $white;
+	font-size: 48px;
+	overflow: hidden;
+	width: 100%;
+	height: 250px;
+	padding: 20px;
+	border: 1px solid transparent;
+	margin: 20px 0;
+
+	&:hover {
+		border-color: $white;
+		color: $white;
+
+		&> .thumbnail-overlay {
+			opacity: 1;
+		}
+		&> .thumbnail-inner {
+			filter: grayscale(100%);
+		}
+	}
+	&-inner {
+		height: 210px;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 10;
+		background-color: transparentize($white, 0.2);
+		font-size: 16px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		opacity: 0;
+		transition: all 0.3s ease-in-out;
+		color: $tosca_dark;
+	}
+}
+
+// Button
+.button.button-outline {
+    border: 0.1rem solid $white;
+    color: $white;
+	border-radius: 3rem;
+	height: auto;
+	line-height: normal;
+	padding: 1.5rem 4rem;
+	font-size: 14px;
+
+	&:visited {
+		color: $white;
+	}
+    &:hover {
+    	background-color: $white;
+    	border-color: $pink;
+    	color: $pink;
+    }
+	&.button-rounded {
+	    border-radius: 50%;
+	    font-size: 4rem;
+	    padding: 1.2rem 1.8rem 1rem 1.8rem;
+	    margin: 10px;
+
+	    &:hover {
+	    	color: $pink;
+	    }
+	}
+}
+
+// Full Page
+.fp-controlArrow.fp {
+
+	&-prev {
+		left: 120px;
+	}
+	&-next {
+		right: 120px;
+	}
+}
