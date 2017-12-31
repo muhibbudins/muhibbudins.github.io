@@ -56,7 +56,7 @@ body {
 }
 
 .section {
-	width: 100%;
+	max-width: 100%;
 	height: 100vh;
 	display: flex;
 	align-items: center;
@@ -70,6 +70,11 @@ body {
 		position: relative;
 		display: block;
 		text-align: center;
+		max-width: 80%;
+
+		@media (max-width: 768px) {
+			max-width: 100%;
+		}
 	}
 	&-two {
 		background-color: darken($background, 3%);
@@ -231,20 +236,38 @@ body {
 		width: 95vw;
 		margin: 0;
 		margin-left: 5vw;
-		height: 100vh;
+		min-height: 100vh;
 
 		.modal-content {
 			border-radius: 0;
 			border: 0;
 			box-shadow: none;
-			height: 100vh;
+			min-height: 100vh;
 			color: #525252;
+			position: relative;
 		}
 		.modal-header {
 			border: 0;
 		}
 		.modal-body {
-			padding: 0 40px;
+			padding: 100px;
+			min-height: calc(100vh - 110px);
+
+			&:before {
+				content: 'Close';
+				position: absolute;
+				bottom: 20px;
+				left: 20px;
+			}
+			&:after {
+				content: '';
+				background-image: url(../img/photo.jpg);
+				position: absolute;
+				width: 100px;
+				height: 100px;
+				bottom: 40px;
+				right: 60px;
+			}
 		}
 		.title {
 			font-family: 'Quicksand', sans-serif;
