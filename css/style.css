@@ -128,19 +128,17 @@ body {
     position: relative;
     display: block;
     text-align: center; }
-  .overlay .nav-pill li a {
-    animation-delay: 2s; }
-    .overlay .nav-pill li a:nth(1) {
-      animation-delay: 2.5s; }
-    .overlay .nav-pill li a:nth(2) {
-      animation-delay: 3s; }
-    .overlay .nav-pill li a:nth(3) {
-      animation-delay: 3.5s; }
-    .overlay .nav-pill li a:nth(4) {
-      animation-delay: 4s; }
-    .overlay .nav-pill li a:nth(5) {
-      animation-delay: 5.5s; }
-    .overlay .nav-pill li a:nth(6) {
-      animation-delay: 5s; }
+  .overlay .overlay-inner .nav-pill li a:nth-child(1) {
+    animation-delay: 2.5s; }
+  .overlay .overlay-inner .nav-pill li a:nth-child(2) {
+    animation-delay: 3s; }
+  .overlay .overlay-inner .nav-pill li a:nth-child(3) {
+    animation-delay: 3.5s; }
+  .overlay .overlay-inner .nav-pill li a:nth-child(4) {
+    animation-delay: 4s; }
+  .overlay .overlay-inner .nav-pill li a:nth-child(5) {
+    animation-delay: 5.5s; }
+  .overlay .overlay-inner .nav-pill li a:nth-child(6) {
+    animation-delay: 5s; }
 
 /*# sourceMappingURL=style.css.map */
