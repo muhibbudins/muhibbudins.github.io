@@ -133,6 +133,7 @@ body {
 	color: inherit;
 	letter-spacing: 10px;
 	animation-delay: .2s;
+	text-transform: uppercase;
 
 	&-sub {
 		font-family: inherit;
@@ -217,11 +218,13 @@ body {
 
 		.title {
 			color: $background;
+			margin-bottom: 40px;
 		}
 	}
 	.overlay-inner .nav-pill li a {
 		font-size: 24px;
 		color: transparentize($background, 0.4);
+		padding: 14px 0;
 
 		&:hover,
 		&:focus {

@@ -97,7 +97,8 @@ body {
   font-size: 48px;
   color: inherit;
   letter-spacing: 10px;
-  animation-delay: .2s; }
+  animation-delay: .2s;
+  text-transform: uppercase; }
   .title-sub {
     font-family: inherit;
     font-size: 16px;
@@ -167,10 +168,12 @@ body {
     display: block;
     text-align: center; }
     .overlay-inner .title {
-      color: #ABD00D; }
+      color: #ABD00D;
+      margin-bottom: 40px; }
   .overlay .overlay-inner .nav-pill li a {
     font-size: 24px;
-    color: rgba(171, 208, 13, 0.6); }
+    color: rgba(171, 208, 13, 0.6);
+    padding: 14px 0; }
     .overlay .overlay-inner .nav-pill li a:hover, .overlay .overlay-inner .nav-pill li a:focus {
       background-color: transparent;
       color: #ABD00D; }
