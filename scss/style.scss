@@ -1,0 +1,195 @@
+// Color
+$background: #ABD00D;
+
+// General
+body {
+	background-color: $background;
+	font-family: 'Quicksand', sans-serif;
+	color: #FFFFFF;
+	overflow-y: hidden;
+}
+
+// Navbar
+.navbar {
+	background-color: transparent;
+	border: 0;
+	height: auto;
+	margin-bottom: 0;
+
+	.navbar-brand {
+		font-size: 32px;
+		padding: 26px 20px;
+		transition: all 0.3s ease-in-out;
+		line-height: normal;
+		color: transparentize(#FFFFFF, 0.6);
+		
+		&.overlay-hide {
+			color: $background;
+			z-index: 320;
+			display: none;
+
+			&:hover,
+			&:focus {
+				color: $background;
+			}
+		}
+		&:hover,
+		&:focus {
+			color: #FFFFFF;
+		}
+	}
+	.navbar-nav > li > a {
+		color: #FFFFFF;
+		padding: 30px 20px;
+		font-size: 16px;
+		text-transform: capitalize;
+		transition: all 0.3s ease-in-out;
+		line-height: normal;
+		color: transparentize(#FFFFFF, 0.6);
+
+		&:hover,
+		&:focus {
+			color: #FFFFFF;
+		}
+	}
+}
+
+.section {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+
+	&-inner {
+		position: relative;
+		display: block;
+		text-align: center;
+	}
+	&-two {
+		background-color: darken($background, 3%);
+	}
+	&-three {
+		background-color: darken($background, 6%);
+	}
+	&-four {
+		background-color: darken($background, 9%);
+	}
+	&-five {
+		background-color: darken($background, 12%);
+	}
+	&:before {
+		content: attr(data-text);
+		position: absolute;
+		bottom: 0;
+		left: 5%;
+		font-family: 'Oswald', sans-serif;
+		font-size: 110px;
+		opacity: .1;
+	}
+	&:after {
+		content: attr(data-sub-text);
+		position: absolute;
+		top: 10%;
+		right: 5%;
+		font-family: 'Oswald', sans-serif;
+		font-size: 80px;
+		opacity: .1;
+	}
+	.btn {
+		margin-top: 20px;
+		animation-delay: 1s;
+	}
+}
+
+.title {
+	font-family: 'Oswald', sans-serif;
+	font-size: 48px;
+	color: inherit;
+	letter-spacing: 10px;
+	animation-delay: .2s;
+
+	&-sub {
+		font-family: inherit;
+		font-size: 16px;
+		opacity: .4;
+		margin-top: 10px;
+		animation-delay: .6s;
+	}
+}
+
+.btn {
+	padding: 18px 40px;
+	font-size: 16px;
+	border-radius: 30px;
+	border: 1px solid #FFFFFF;
+	background-color: transparent;
+	color: #FFFFFF;
+	line-height: normal;
+}
+
+.navigator {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	display: block;
+
+	&-up,
+	&-down {
+		text-decoration: none;
+		color: inherit;
+		font-size: 24px;
+		display: block;
+		position: relative;
+	}
+}
+
+.overlay {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background-color: #FFFFFF;
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	transition: all 0.4s ease-in-out;
+
+	&-active {
+		z-index: 300;
+		opacity: 1;
+	}
+
+	&-inner {
+		position: relative;
+		display: block;
+		text-align: center;
+	}
+	.nav-pill li a {
+		animation-delay: 2s;
+
+		&:nth(1) {
+			animation-delay: 2.5s;			
+		}
+		&:nth(2) {
+			animation-delay: 3s;			
+		}
+		&:nth(3) {
+			animation-delay: 3.5s;			
+		}
+		&:nth(4) {
+			animation-delay: 4s;			
+		}
+		&:nth(5) {
+			animation-delay: 5.5s;			
+		}
+		&:nth(6) {
+			animation-delay: 5s;			
+		}
+	}
+}
