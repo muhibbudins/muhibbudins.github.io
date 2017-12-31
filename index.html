@@ -39,14 +39,14 @@
     <div class="navbar navbar-default navbar-fixed-top animated fadeInDown">
         <div class="container">
             <div class="navbar-header">
-                <a href="#" class="navbar-brand overlay-show">
+                <div class="navbar-brand overlay-show">
                     <span class="fa fa-bars"></span>
-                </a>
-                <a href="#" class="navbar-brand overlay-hide">
+                </div>
+                <div class="navbar-brand overlay-hide">
                     <span class="fa fa-close"></span>
-                </a>
+                </div>
             </div>
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
                 <li><a href="#" class="anchor-button" data-target="#me">Home</a></li>
                 <li><a href="#" class="anchor-button" data-target="#article">Article</a></li>
                 <li><a href="#" class="anchor-button" data-target="#design">Design</a></li>
@@ -58,12 +58,13 @@
 
     <div class="overlay">
         <div class="overlay-inner">
+            <div class="title">Contact</div>
             <ul class="nav nav-pill">
-                <li><a href="" class="item fadeInUp">ad</a></li>
-                <li><a href="" class="item fadeInUp">ad</a></li>
-                <li><a href="" class="item fadeInUp">ad</a></li>
-                <li><a href="" class="item fadeInUp">ad</a></li>
-                <li><a href="" class="item fadeInUp">ad</a></li>
+                <li><a href="" class="item fadeInUp">Github</a></li>
+                <li><a href="" class="item fadeInUp">LinkedIn</a></li>
+                <li><a href="" class="item fadeInUp">Pinterest</a></li>
+                <li><a href="" class="item fadeInUp">Facebook</a></li>
+                <li><a href="" class="item fadeInUp">G-Mail</a></li>
             </ul>
         </div>
     </div>
@@ -72,37 +73,51 @@
         <div class="section-inner">
             <div class="title animated fadeInDown">Hello There,</div>
             <div class="title-sub animated fadeInUp">Welcome to my Github Pages! Showcase from my article, design and open source project will be show here. <br> Don't forget to follow me on Facebook, Pinterest, LinkedIn & Github.</div>
-            <a href="" class="btn btn-default animated fadeInDown">Who am i?</a>
+            <a href="" class="btn btn-default animated fadeInDown" data-toggle="modal" data-target="#myModal">Who am i?</a>
         </div>
     </div>
 
     <div id="article" class="section section-two" data-text="ARTICLE" data-sub-text="2">
         <div class="section-inner">
-            <div class="title animated fadeInDown">Tutorial & Article</div>
+            <div class="title fadeInDown">Tutorial & Article</div>
         </div>
     </div>
 
     <div id="design" class="section section-three" data-text="DESIGN" data-sub-text="3">
         <div class="section-inner">
-            <div class="title animated fadeInDown">Clean Design</div>
+            <div class="title fadeInDown">Clean Design</div>
         </div>
     </div>
 
     <div id="project" class="section section-four" data-text="PROJECT" data-sub-text="4">
         <div class="section-inner">
-            <div class="title animated fadeInDown">Open Source Projects</div>
+            <div class="title fadeInDown">Open Source Projects</div>
         </div>
     </div>
 
     <div id="contact" class="section section-five" data-text="CONTACT" data-sub-text="5">
         <div class="section-inner">
-            <div class="title animated fadeInDown">Leave A Message</div>
+            <div class="title fadeInDown">Leave A Message</div>
         </div>
     </div>
     
     <div class="navigator">
         <a href="" class="navigator-up anchor-button" data-target="#me"><i class="fa fa-chevron-up"></i></a>
         <a href="" class="navigator-down anchor-button" data-target="#article"><i class="fa fa-chevron-down"></i></a>
+    </div>
+
+    <div class="modal fade modal-fullscreen" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="title">Let Me Introduce MySelf</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi reiciendis eveniet cupiditate dolore. Obcaecati quod expedita, excepturi nisi incidunt, esse officia pariatur. Quisquam quas reprehenderit error sed, aperiam possimus perferendis.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Import Vendor Script -->

@@ -30,16 +30,12 @@ $(document).ready(function() {
     	$('.overlay-show').hide();
     	$('.overlay-hide').show();
 		$('.overlay').addClass('overlay-active');
-
-		$('.nav-pill li .item').addClass('animated');
     })
 
     $('.overlay-hide').click(function(e) {
     	$('.overlay-show').show();
     	$('.overlay-hide').hide();
 		$('.overlay').removeClass('overlay-active');
-
-		$('.nav-pill li .item').removeClass('animated');
     })
 
     // Navigator
