@@ -4,6 +4,13 @@ body {
   color: #FFFFFF;
   overflow-y: hidden; }
 
+a,
+a:visited {
+  color: #f1c40f; }
+
+a:hover {
+  color: #FFFFFF; }
+
 .navbar {
   background-color: transparent;
   border: 0;
@@ -86,7 +93,8 @@ body {
   .section .btn {
     margin-top: 20px;
     animation-delay: 1s;
-    line-height: normal; }
+    line-height: normal;
+    color: #FFFFFF; }
     .section .btn:hover {
       background-color: #FFFFFF;
       border-color: transparent;

@@ -9,6 +9,14 @@ body {
 	overflow-y: hidden;
 }
 
+a,
+a:visited {
+	color: #f1c40f;
+}
+a:hover {
+	color: #FFFFFF;
+}
+
 // Navbar
 .navbar {
 	background-color: transparent;
@@ -118,6 +126,7 @@ body {
 		margin-top: 20px;
 		animation-delay: 1s;
 		line-height: normal;
+		color: #FFFFFF;
 
 		&:hover {
 			background-color: #FFFFFF;
