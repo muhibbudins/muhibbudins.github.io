@@ -106,7 +106,8 @@ a:hover {
   color: inherit;
   letter-spacing: 10px;
   animation-delay: .2s;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 10px; }
   .title-sub {
     font-family: inherit;
     font-size: 16px;
