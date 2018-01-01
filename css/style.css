@@ -178,6 +178,13 @@ body {
       background-color: transparent;
       color: #3498db; }
 
+.modal.fade {
+  opacity: 1; }
+  .modal.fade .modal-dialog {
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    transform: translate(0); }
+
 .modal.modal-fullscreen .modal-dialog {
   width: 95vw;
   margin: 0;
@@ -196,7 +203,7 @@ body {
     padding: 100px;
     min-height: calc(100vh - 110px); }
     .modal.modal-fullscreen .modal-dialog .modal-body:before {
-      content: 'Close';
+      content: '<- Close';
       position: absolute;
       bottom: 20px;
       left: 20px; }

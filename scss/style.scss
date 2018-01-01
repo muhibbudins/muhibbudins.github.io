@@ -234,6 +234,15 @@ body {
 	}
 }
 
+.modal.fade{
+	opacity:1;
+	
+	.modal-dialog {
+		-webkit-transform: translate(0);
+		-moz-transform: translate(0);
+		transform: translate(0);
+	}
+}
 .modal.modal-fullscreen {
 	.modal-dialog {
 		width: 95vw;
@@ -257,7 +266,7 @@ body {
 			min-height: calc(100vh - 110px);
 
 			&:before {
-				content: 'Close';
+				content: '<- Close';
 				position: absolute;
 				bottom: 20px;
 				left: 20px;

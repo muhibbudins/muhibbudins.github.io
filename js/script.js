@@ -38,6 +38,14 @@ $(document).ready(function() {
 		$('.overlay').removeClass('overlay-active');
     });
 
+	$('#myModal')
+		.on('show.bs.modal', function (e) {
+			$('.modal .modal-dialog').attr('class', 'modal-dialog slideInRight animated');
+		})
+		.on('hide.bs.modal', function (e) {
+			$('.modal .modal-dialog').attr('class', 'modal-dialog fadeOut animated');
+		});
+
     // Navigator
     function navigate() {
 	    var page = ["#me",'#project','#article','#design','#contact'],
