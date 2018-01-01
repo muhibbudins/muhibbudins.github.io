@@ -1,5 +1,5 @@
 // Color
-$background: #ABD00D;
+$background: #3498db;
 
 // General
 body {
@@ -77,16 +77,16 @@ body {
 		}
 	}
 	&-two {
-		background-color: darken($background, 3%);
+		background-color: darken($background, 2%);
 	}
 	&-three {
-		background-color: darken($background, 6%);
+		background-color: darken($background, 4%);
 	}
 	&-four {
-		background-color: darken($background, 9%);
+		background-color: darken($background, 6%);
 	}
 	&-five {
-		background-color: darken($background, 12%);
+		background-color: darken($background, 8%);
 	}
 	&:before {
 		content: attr(data-text);

@@ -30,17 +30,17 @@ $(document).ready(function() {
     	$('.overlay-show').hide();
     	$('.overlay-hide').show();
 		$('.overlay').addClass('overlay-active');
-    })
+    });
 
     $('.overlay-hide').click(function(e) {
     	$('.overlay-show').show();
     	$('.overlay-hide').hide();
 		$('.overlay').removeClass('overlay-active');
-    })
+    });
 
     // Navigator
     function navigate() {
-	    var page = ["#me",'#article','#design','#project','#contact'],
+	    var page = ["#me",'#project','#article','#design','#contact'],
 	    	href = window.location.href.substr(loc, 100),
 	    	loc  = href.indexOf('#'),
 	    	get  = href.substr(loc, 100),
@@ -65,4 +65,24 @@ $(document).ready(function() {
     		window.location.href = window.location.pathname + page[0];
 	    }
     }
+
+    loadProject();
 });
+
+function loadProject() {
+	$.ajax({
+		"async": true,
+		"crossDomain": true,
+		"url": "https://api.github.com/users/muhibbudins/repos",
+		"method": "GET",
+		"headers": {}
+	}).done(function (response) {
+		var data = response.filter(function(a,b) {
+			return a.fork === false && a.forks_count > 0 && a.stargazers_count > 0;
+		});
+
+		data.map(function(a,b) {
+			// console.log(a)
+		});
+	});
+}

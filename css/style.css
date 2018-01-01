@@ -1,5 +1,5 @@
 body {
-  background-color: #ABD00D;
+  background-color: #3498db;
   font-family: 'Quicksand', sans-serif;
   color: #FFFFFF;
   overflow-y: hidden; }
@@ -17,11 +17,11 @@ body {
     color: rgba(255, 255, 255, 0.4);
     cursor: pointer; }
     .navbar .navbar-brand.overlay-hide {
-      color: #ABD00D;
+      color: #3498db;
       z-index: 320;
       display: none; }
       .navbar .navbar-brand.overlay-hide:hover, .navbar .navbar-brand.overlay-hide:focus {
-        color: #ABD00D; }
+        color: #3498db; }
     .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
       color: #FFFFFF; }
   .navbar .navbar-nav > li > a {
@@ -54,13 +54,13 @@ body {
       .section-inner {
         max-width: 100%; } }
   .section-two {
-    background-color: #9fc20c; }
+    background-color: #2b94d9; }
   .section-three {
-    background-color: #93b30b; }
+    background-color: #268fd5; }
   .section-four {
-    background-color: #87a50a; }
+    background-color: #2489cc; }
   .section-five {
-    background-color: #7c9609; }
+    background-color: #2383c4; }
   .section:before {
     content: attr(data-text);
     position: absolute;
@@ -90,7 +90,7 @@ body {
     .section .btn:hover {
       background-color: #FFFFFF;
       border-color: transparent;
-      color: #ABD00D; }
+      color: #3498db; }
 
 .title {
   font-family: 'Oswald', sans-serif;
@@ -168,15 +168,15 @@ body {
     display: block;
     text-align: center; }
     .overlay-inner .title {
-      color: #ABD00D;
+      color: #3498db;
       margin-bottom: 40px; }
   .overlay .overlay-inner .nav-pill li a {
     font-size: 24px;
-    color: rgba(171, 208, 13, 0.6);
+    color: rgba(52, 152, 219, 0.6);
     padding: 14px 0; }
     .overlay .overlay-inner .nav-pill li a:hover, .overlay .overlay-inner .nav-pill li a:focus {
       background-color: transparent;
-      color: #ABD00D; }
+      color: #3498db; }
 
 .modal.modal-fullscreen .modal-dialog {
   width: 95vw;
@@ -214,7 +214,7 @@ body {
     margin-bottom: 20px; }
 
 .modal-backdrop {
-  background-color: #ABD00D; }
+  background-color: #3498db; }
   .modal-backdrop.in {
     opacity: 1; }
 
