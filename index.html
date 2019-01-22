@@ -51,7 +51,8 @@
 </head>
 
 <body>
-    <div class="navbar navbar-default navbar-fixed-top animated fadeInDown">
+    <h5>Redirecting to new website, please wait ...</h5>
+    <!-- <div class="navbar navbar-default navbar-fixed-top animated fadeInDown">
         <div class="container">
             <div class="navbar-header">
                 <div class="navbar-brand overlay-show">
@@ -151,12 +152,10 @@
         </div>
     </div>
 
-    <!-- Import Vendor Script -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-    <!-- Import Custom Script -->
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script> -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89521321-2"></script>
@@ -166,6 +165,10 @@
       gtag('js', new Date());
 
       gtag('config', 'UA-89521321-2');
+
+      setTimeout(function() {
+        window.location.href = 'https://muhibbudins.netlify.com/'
+      }, 3000);
     </script>
 </body>
 </html>
